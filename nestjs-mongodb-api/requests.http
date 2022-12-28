@@ -1,0 +1,40 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "taqi.arch@gmail.com",
+    "password": "RandomPass!"
+}
+
+### Signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "taqi.arch@gmail.com",
+    "password": "RandomPass!"
+}
+
+### Find a Particualer user with a given ID
+GET http://localhost:3000/auth/5
+
+### Find a Particualer user with a given ID
+GET http://localhost:3000/auth?email=taqi.arch@gmail.com
+
+### Delete a Particualer user with a given ID
+DELETE http://localhost:3000/auth/1
+
+### Update a new user
+PATCH  http://localhost:3000/auth/4
+Content-Type: application/json
+
+{
+    "email": "mut@ciklum.com"
+}
+
+
+
+POST http://localhost:3000/reports
+Content-Type: application/json
+{}
